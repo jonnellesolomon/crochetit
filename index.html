@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/index.css" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <title>Crochet-it</title>
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="logo">
+            <a href="#">Crochet-it</a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tabs/bags.html">Bags</a></li>
+                <li><a href="tabs/hats.html">Hats</a></li>
+                <li><a href="tabs/petcollars.html">Pet Collars</a></li>
+                <li><a href="tabs/swimwear.html">Swimwear</a></li>
+                <li><a href="tabs/tops.html">Tops</a></li>
+            </ul>
+        </nav>
+
+        <div class="icons">
+            <div class="search-popup" id="mySearch">
+                <form action="index.html">
+                    <input type="text" placeholder="Search" name="search">
+                    <button type="button" class="btn cancel" onclick="closeSearch()"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+
+            <a class="openSearch" id="magnif" onclick="openSearch()"><i class="fa fa-search"></i></a>
+            <a href="spages/cart.html"><i class="fa fa-shopping-bag"></i></a>
+            <a class="openMenu" id="burger" onclick="openMenu()"><i class="fas fa-bars"></i></a>
+            <a class="open-button" onclick="openForm()"><i class="fa fa-user"></i></a>
+            <a class="open-button2" onclick="openForm2()"><i class="fas fa-sign-in-alt"></i></a>
+
+            <div class="form-popup" id="myForm">
+                <form action="index.html" class="form-container">
+                    <h1>Login</h1>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    <button type="submit" class="btn">Login</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+            </div>
+            <div class="form-popup" id="myForm2">
+                <form action="index.html" class="form-container">
+                    <h1>Create an account</h1>
+                    <input type="text" placeholder="Enter Name" name="name" required>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    <input type="password" placeholder="Confirm Password" name="psw" required>
+                    <button type="submit" class="btn">Signup</button>
+                    <button type="button" class="btn cancel" onclick="closeForm2()">Close</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="banner">
+            <div class="banner-title">
+                <p>Just dropped</p>
+                <h1>Enjoy this <br> Summer Collection</h1>
+                <a href="spages/summer-collection.html">Shop now</a>
+            </div>
+
+            <div class="banner-image">
+                <img class="image1" src="assets/images/pexels-hillary.jpg" alt="image" width="260">
+                <img class="image2" src="assets/images/pexels-photo.jpeg" alt="image" width="260">
+            </div>
+
+            <div class="banner-arrow">
+                <a href="#"><i class="fa fa-chevron-right"></i></a>
+            </div>
+        </div>
+        
+        <div class="categories">
+            <h2>Popular Collection</h2>
+            <div class="cards">
+                <a href="tabs/beret.html">
+                    <h3>Berets</h3>
+                    <img src="assets/images/beret3.jpg">
+                </a>
+                <a href="tabs/buckethat.html">
+                    <h3>Bucket Hats</h3>
+                    <img src="assets/images/bucket3.jpg">
+                </a>
+                <a href="tabs/cardi.html">
+                    <h3>Cardigans</h3>
+                    <img src="assets/images/cardi2.jpg">
+                </a>
+                <a href="tabs/cat.html">
+                    <h3>Cat Collars</h3>
+                    <img src="assets/images/pet10.jpg">
+                </a>
+                <a href="tabs/handbag.html">
+                    <h3>Handbags</h3>
+                    <img src="assets/images/bag9.jpg">
+                </a>
+                <a href="tabs/pouch.html">
+                    <h3>Pouches</h3>
+                    <img src="assets/images/pouch3.jpg">
+                </a>
+            </div>
+        </div>
+
+        <div class="instagram">
+            <div class="instagram-images">
+                <div class="ig1">
+                    <img src="assets/images/bag1.jpg" width="300">
+                </div>
+                <div class="instagram-title">
+                    <h1>instagram</h1>
+                    <h3><a href="instagram.com">@crochetitph</a></h3>
+                    <img src="assets/images/bag2.jpg" width="150">
+                    <img src="assets/images/top1.jpg" width="150">
+                </div>
+                <div class="ig2">
+                    <img src="assets/images/baghat.jpg" width="300">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <ul class="cc">
+            <li><strong>Customer Care</strong></li>
+            <li>Help Center</li>
+            <li>How to Buy</li>
+            <li>Shipping & Delivery</li>
+            <li>International Product Policy</li>
+            <li>How to Return</li>
+            <li>Question?</li>
+            <li>Contact Us</li>
+        </ul>
+
+        <ul class="cc">
+            <li><strong>Crochet-it</strong></li>
+            <li>About Crochet-it</li>
+            <li>Careers</li>
+            <li>Terms & Conditions</li>
+            <li>Privacy Policy</li>
+            <li>Press & Media</li>
+            <li>Campaign Terms & Conditions</li>
+            <li>Intellectual Property Protection</li>
+        </ul>
+
+        <ul class="payment">
+            <li><strong>Payment Method</strong></li>
+            <li><i class="fab fa-paypal"></i></li>
+            <li><i class="fab fa-cc-visa"></i></li>
+            <li><i class="fab fa-cc-amex"></i></li>
+        </ul>
+
+        <ul class="delivery">
+            <li><strong>Delivery Services</strong></li>
+            <li><img src="assets/images/j&t.png" width="100"></li>
+            <li><img src="assets/images/ninjavan.png" width="100"></li>
+            <li><img src="assets/images/lbc.jpg" width="100"></li>
+        </ul>
+
+        © Crochet-it 2022 <br> <br>
+        email: crochet-it@gmail.com
+    </footer>
+</div>
+</body>
+
+<script src="assets/script.js"></script>
+</html>

@@ -1,0 +1,203 @@
+$pink: #ee5e69;
+$dark: #39191a;
+$light: #ececf1;
+$gray: #ccb6bb;
+
+$mont: 'montserrat';
+
+
+body {
+    font-family: $mont;
+    padding: 3rem 4rem;
+    display: grid;
+    grid-template-columns: 65% 35%;
+
+    .shopping-cart {
+        padding-right: 3rem;
+
+        a {
+            text-decoration: none;
+            color: $pink;
+            font-weight: 600;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: $dark;
+        }
+
+        .info1 {
+            border: 1px solid $gray;
+            border-radius: 1rem;
+            margin: 1rem 0;
+
+            ul {
+                display: grid;
+                grid-template-columns: 10% 70% 20%;
+                list-style: none;
+                font-weight: 600;
+
+                li {
+                    .cart-titles {
+                        text-transform: uppercase;
+                        color: $gray;
+                        font-size: .8rem;
+                    }
+            
+                    .cart-names {
+                        color: $dark;
+                    }
+                }
+
+                .cart-icons {
+                    padding: .5rem  .8rem;
+                    color: $pink;
+                    font-weight: 600;
+                    font-size: 1.2rem;
+                }
+        
+                .cart-buttons {
+                    padding-top: 2rem;
+                    
+                    a {
+                        color: $gray;
+                        text-transform: uppercase;
+                        font-size: .8rem;
+
+                
+                    }
+                }
+            }
+        }
+
+        .payment {
+            background-color: rgb(238, 238, 238);
+            padding: .5rem 0;
+            border-radius: 1rem;
+            margin: 1rem 0;
+            border: none;
+            
+            ul {
+                display: grid;
+                grid-template-columns: 10% 90%;
+                font-size: .8rem;
+                align-items: center;
+                
+                .payment-names {
+                    text-transform: uppercase;
+                    color: $dark;
+                    font-weight: 600;
+                }
+
+                .payment-icon {
+                    font-size: 1.2rem;
+                }
+
+                li {
+                    list-style: none;
+                    color: $dark;
+                }
+            }
+        }
+
+        .pm {
+            ul {
+                list-style: none;
+                display: grid;
+                grid-template-columns: 10% 10% 80%;
+                align-items: center;
+                
+                .pm-icon {
+                    font-size: 1.2rem;
+                    
+                }
+                li {
+                    color: $dark;
+                    font-weight: 600;
+
+                    input {
+                        height: 25px;
+                        width: 25px;
+                    }
+
+                    i {
+                        color: $dark;
+                        border: 1px solid $dark;
+                        padding: .6rem .5rem;
+                        border-radius: 10px;
+                        width: 23px;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .order {
+        border: 1px solid rgb(241, 241, 241);
+        border-radius: 1rem;
+        padding: 1rem 2.5rem;
+        margin-top: 6rem;
+
+        h1 {
+            font-size: 1.2rem;
+        }
+
+        .yorder {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            padding: 1rem 0;
+            border-bottom: 1px solid rgb(241, 241, 241);
+            border-top: 1px solid rgb(241, 241, 241);
+
+            img {
+                width: 100px;
+                height: 100px;
+                border-radius: .5rem;
+            }
+
+            .yorder-info {
+                padding-left: 1rem;
+
+                h1 {
+                    font-size: 1rem;
+                    color: $dark;
+                }
+
+                h2 {
+                    font-size: .9rem;
+                    color: $pink;
+                }
+            }
+        }
+
+        .delivery-info {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            padding-top: 1.5rem;
+            
+            .di-title {
+    
+                h1 {
+                    font-size: .9rem;
+                }
+            }
+        }
+
+        .total {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            background-color: rgb(238, 238, 238);
+            border-radius: 1rem;
+            padding: 2rem 3rem;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 2rem;
+            margin-top: 1rem;
+        }
+    }
+}

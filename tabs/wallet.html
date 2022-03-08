@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/index.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <title>Crochet-it - Bags / Wallets</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../index.html">Crochet-it</a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="bags.html">Bags</a></li>
+                <li><a href="hats.html">Hats</a></li>
+                <li><a href="petcollars.html">Pet Collars</a></li>
+                <li><a href="swimwear.html">Swimwear</a></li>
+                <li><a href="tops.html">Tops & Bottoms</a></li>
+            </ul>
+        </nav>
+
+        <div class="icons">
+            <div class="search-popup" id="mySearch">
+                <form action="../index.html">
+                    <input type="text" placeholder="Search" name="search">
+                    <button type="button" class="btn cancel" onclick="closeSearch()"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+
+            <a class="openSearch" id="magnif" onclick="openSearch()"><i class="fa fa-search"></i></a>
+            <a href="../spages/cart.html"><i class="fa fa-shopping-bag"></i></a>
+            <a class="open-button" onclick="openForm()"><i class="fa fa-user"></i></a>
+            <a class="open-button2" onclick="openForm2()"><i class="fas fa-sign-in-alt"></i></a>
+
+            <div class="form-popup" id="myForm">
+                <form action="../index.html" class="form-container">
+                    <h1>Login</h1>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    <button type="submit" class="btn">Login</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+            </div>
+
+            <div class="form-popup" id="myForm2">
+                <form action="../index.html" class="form-container">
+                    <h1>Create an account</h1>
+                    <input type="text" placeholder="Enter Name" name="name" required>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    <input type="password" placeholder="Confirm Password" name="psw" required>
+                    <button type="submit" class="btn">Signup</button>
+                    <button type="button" class="btn cancel" onclick="closeForm2()">Close</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <div class="bags">
+        <div class="sidebar">
+            <p>Categories</p>
+            <ul>
+                <li><a href="bags.html">All</a></li>
+                <li><a href="handbag.html">Handbag</a></li>
+                <li><a href="pouch.html">Pouch</a></li>
+                <li><a href="slingbag.html">Sling bag</a></li>
+                <li><a href="wallet.html">Wallets</a></li>
+            </ul>
+        </div>
+
+        <div class="items">
+            <div class="cards">
+                <img src="../assets/images/wallet1.jpg">
+                <p class="card-title">Blueming Wallet Pouch</p>
+                <div class="card-price">
+                    <div class="price">
+                        <p>Price</p>
+                        <p>₱490.00</p>
+                    </div>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <ul class="cc">
+            <li><strong>Customer Care</strong></li>
+            <li>Help Center</li>
+            <li>How to Buy</li>
+            <li>Shipping & Delivery</li>
+            <li>International Product Policy</li>
+            <li>How to Return</li>
+            <li>Question?</li>
+            <li>Contact Us</li>
+        </ul>
+
+        <ul class="cc">
+            <li><strong>Crochet-it</strong></li>
+            <li>About Crochet-it</li>
+            <li>Careers</li>
+            <li>Terms & Conditions</li>
+            <li>Privacy Policy</li>
+            <li>Press & Media</li>
+            <li>Campaign Terms & Conditions</li>
+            <li>Intellectual Property Protection</li>
+        </ul>
+
+        <ul class="payment">
+            <li><strong>Payment Method</strong></li>
+            <li><i class="fab fa-paypal"></i></li>
+            <li><i class="fab fa-cc-visa"></i></li>
+            <li><i class="fab fa-cc-amex"></i></li>
+        </ul>
+
+        <ul class="delivery">
+            <li><strong>Delivery Services</strong></li>
+            <li><img src="../assets/images/j&t.png" width="100"></li>
+            <li><img src="../assets/images/ninjavan.png" width="100"></li>
+            <li><img src="../assets/images/lbc.jpg" width="100"></li>
+        </ul>
+
+        © Crochet-it 2022 <br> <br>
+        email: crochet-it@gmail.com
+    </footer>
+</body>
+<script src="../assets/script.js"></script>
+</html>
